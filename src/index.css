@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Bark Grotesk";
+  src: local("Bark Grotesk"),
+    url(./fonts/bn_bark_grotesk.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "PitchSans Semibold";
+  src: local("PitchSans Semibold"),
+    url(./fonts/pitchSans_semibold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "SohneSchmal-Fett";
+    src: local("SohneSchmal-Fett"),
+      url(./fonts/sohneSchmal_fett.otf) format("opentype");
+}
+
+
+h1, h3 {
+    font-family: "SohneSchmal-Fett"
+}
+
+h2 {
+  font-family: "Bark Grotesk"
+}
+
+p {
+  font-family: "PitchSans Semibold"
+}
+
+
