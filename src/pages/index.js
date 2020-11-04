@@ -7,7 +7,6 @@ import HeroImages from "../components/hero/hero";
 import Layout from "../components/layout";
 import "../index.css";
 import Sidebar from "../components/sidebar/sidebar";
-import ReactSnapScroll from "react-snap-scroll";
 import Mission from "../components/mission-statement/mission-statement";
 import Articles from "../components/articles/articles";
 import Newsletter from "../components/newsletter/newsletter";
@@ -25,12 +24,10 @@ class RootIndex extends React.Component {
           <div class="grid-container">
             <div class="content">
               {/* <Hero data={author.node} /> */}
-              {/* <ReactSnapScroll transition="move-top-bottom"> */}
                 <HeroImages />
                 <Mission />
                 <Articles posts={posts} />
                 <Newsletter />
-              {/* </ReactSnapScroll> */}
             </div>
             <Sidebar />
           </div>
