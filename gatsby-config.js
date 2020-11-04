@@ -25,7 +25,8 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Contentful starter",
+    title: "Support Black Philly",
+    siteUrl: `https://www.supportblackphilly.com`,
   },
   pathPrefix: "/gatsby-contentful-starter",
   plugins: [

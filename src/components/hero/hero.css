@@ -1,0 +1,23 @@
+.left-img {
+  background-image: url("../../assets/hero/wiping.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+}
+
+.right-img {
+  background-image: url("../../assets/hero/keyboard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+}
+
+.img-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
