@@ -1,0 +1,48 @@
+.article-wrapper {
+  width: calc(100% - 10vmin) !important;
+  margin: 3vh auto;
+}
+
+.article-wrapper h1 {
+  font-size: 6vw;
+  margin-bottom: 2vh;
+  letter-spacing: 0.2vw;
+  line-height: 1;
+}
+
+.article-wrapper p {
+  font-size: 1vw;
+}
+
+.article-list-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.article {
+  flex: 0 0 auto;
+  width: 30vw;
+  padding-right: 2vw;
+}
+
+.article:hover {
+}
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}

@@ -16,7 +16,7 @@
 .content {
   grid-area: content;
   height: 80vh;
-  /* overflow: scroll; */
+  overflow: scroll;
   position: relative;
 }
 
@@ -41,10 +41,7 @@
   height: 80vh;
   
 }
-.content::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
-}
+
 
 .buy-black {
   grid-area: buy-black;

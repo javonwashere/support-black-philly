@@ -5,11 +5,12 @@ import { Helmet } from "react-helmet";
 import Hero from "../components/hero";
 import HeroImages from "../components/hero/hero";
 import Layout from "../components/layout";
-import ArticlePreview from "../components/article-preview";
 import "../index.css";
 import Sidebar from "../components/sidebar/sidebar";
 import ReactSnapScroll from "react-snap-scroll";
 import Mission from "../components/mission-statement/mission-statement";
+import Articles from "../components/articles/articles";
+import Newsletter from "../components/newsletter/newsletter";
 
 class RootIndex extends React.Component {
   render() {
@@ -24,23 +25,12 @@ class RootIndex extends React.Component {
           <div class="grid-container">
             <div class="content">
               {/* <Hero data={author.node} /> */}
-              <ReactSnapScroll transition="move-top-bottom">
+              {/* <ReactSnapScroll transition="move-top-bottom"> */}
                 <HeroImages />
                 <Mission />
-              </ReactSnapScroll>
-
-              {/* <div className="wrapper">
-                <h2 className="section-headline">Recent articles</h2>
-                <ul className="article-list">
-                  {posts.map(({ node }) => {
-                    return (
-                      <li key={node.slug}>
-                        <ArticlePreview article={node} />
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div> */}
+                <Articles posts={posts} />
+                <Newsletter />
+              {/* </ReactSnapScroll> */}
             </div>
             <Sidebar />
           </div>

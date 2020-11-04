@@ -1,0 +1,47 @@
+.newsletter-wrapper {
+  width: calc(100% - 10vmin) !important;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.newsletter-wrapper h1 {
+  font-size: 6vw;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+  letter-spacing: 0.2vw;
+  display: block;
+  line-height: 1;
+}
+
+.newsletter-wrapper small {
+    font-family: "Bark Grotesk"
+}
+
+.fist-wrapper {
+    margin: auto 0;
+    position: relative;
+    padding-left: 2vw;
+}
+
+.fist-wrapper img {
+    width: 5vw;
+    border: 1px solid rgb(241, 95, 34);
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.header-wrapper {
+    display: flex;
+}
+
+
+.fist-wrapper {
+    width: 20px;
+}
+
+.newsletter-wrapper p {
+  padding-right: 6vw;
+  font-size: 1.5vw;
+  padding-bottom: 3vh;
+}

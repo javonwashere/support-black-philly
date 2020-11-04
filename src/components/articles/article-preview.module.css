@@ -1,0 +1,49 @@
+.previewTitle {
+  font-size: 2vw;
+  line-height: 1;
+}
+
+.preview {
+  border: 3px solid rgb(40, 40, 40);
+  min-height: 50vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.preview:hover {
+  background-color: rgb(40, 40, 40);
+}
+
+.preview:hover .button{
+  background-color: rgb(252, 177, 32);
+}
+
+.preview:hover h2, .preview:hover p, .preview:hover small {
+  color: rgb(252, 177, 21)
+}
+
+.tag {
+  color: #a0a0a0;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.33333rem 0.5rem;
+  line-height: 1;
+  border-radius: 2px;
+  border: 1px solid #a0a0a0;
+  margin-right: 0.5em;
+}
+.button {
+  border: 3px solid rgb(40, 40, 40);
+  border-radius: 40px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+  font-family: "Bark Grotesk";
+}
+.button a {
+  text-decoration: none;
+  font-size: 1.3vw;
+}
