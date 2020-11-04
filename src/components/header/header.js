@@ -8,7 +8,7 @@ import monogram from "../../assets/sbp_monogram.png";
 import facebook from "../../assets/socials/facebook.svg";
 import instagram from "../../assets/socials/instagram.svg";
 import twitter from "../../assets/socials/twitter.svg";
-import everybodyBlack from "../../assets/everybody_black.png"
+import everybodyBlack from "../../assets/everybody_black.png";
 
 // export default () => (
 //   <nav role="navigation">
@@ -26,8 +26,12 @@ import everybodyBlack from "../../assets/everybody_black.png"
 export default () => (
   <Navbar>
     <NavWrapper>
-      <MonoLogoContainer src={monogram} />
-      <TextLogoContainer src={fullLogo} />
+      <ImgWrapper>
+        <MonoLogoContainer src={monogram} />
+      </ImgWrapper>
+      <ImgWrapper>
+        <TextLogoContainer src={fullLogo} />
+      </ImgWrapper>
       <SocialIconsContainer>
         <a href="/">
           <SocialIcon src={instagram} />
@@ -40,21 +44,29 @@ export default () => (
         </a>
       </SocialIconsContainer>
       <div class="everybody-black-wrapper">
-      <img src={everybodyBlack} />
-    </div>
+        <img src={everybodyBlack} />
+      </div>
     </NavWrapper>
   </Navbar>
 );
 
+const ImgWrapper = styled.div`
+  width: 100%;
+`
+
+
 const SocialIconsContainer = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: flex-end;
 `;
 
 const SocialIcon = styled.img`
   height: 20px;
+  width: 10px;
   width: auto;
-  padding-left: 0.5vw;
+  padding-left: 1vw;
 `;
 
 const Navbar = styled.div`
@@ -77,16 +89,19 @@ const NavWrapper = styled.div`
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  position: relative;
+  // position: relative;
+  
 `;
 
 const MonoLogoContainer = styled.img`
-  height: 50%;
+  height: 10vw;
+  max-height: 10vh;
   width: auto;
 `;
 
 const TextLogoContainer = styled.img`
-  height: 80%;
+  height: 18vw;
+  max-height: 18vh;
   width: auto;
 `;
 
