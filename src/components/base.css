@@ -16,7 +16,7 @@
 .content {
   grid-area: content;
   height: 80vh;
-  overflow: scroll;
+  /* overflow: scroll; */
   position: relative;
 }
 

@@ -9,7 +9,7 @@ import ArticlePreview from "../components/article-preview";
 import "../index.css";
 import Sidebar from "../components/sidebar/sidebar";
 import ReactSnapScroll from "react-snap-scroll";
-import everybodyBlack from "../assets/everybody_black.png"
+import Mission from "../components/mission-statement/mission-statement";
 
 class RootIndex extends React.Component {
   render() {
@@ -26,8 +26,7 @@ class RootIndex extends React.Component {
               {/* <Hero data={author.node} /> */}
               <ReactSnapScroll transition="move-top-bottom">
                 <HeroImages />
-                <HeroImages />
-                <HeroImages />
+                <Mission />
               </ReactSnapScroll>
 
               {/* <div className="wrapper">

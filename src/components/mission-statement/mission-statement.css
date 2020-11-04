@@ -1,0 +1,15 @@
+.mission-statement-wrapper {
+  width: calc(100% - 10vmin) !important;
+  margin: 0 auto;
+}
+
+.mission-statement-wrapper h1 {
+  font-size: 6vw;
+  margin-bottom: 2vh;
+  letter-spacing: 0.2vw;
+}
+
+.mission-statement-wrapper p {
+  padding-right: 6vw;
+  font-size: 1.5vw;
+}
