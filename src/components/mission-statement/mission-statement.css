@@ -6,13 +6,24 @@
 
 .mission-statement-wrapper h1 {
   font-size: 6vw;
-  margin-bottom: 2vh;
+  /* margin-bottom: 2vh; */
   letter-spacing: 0.2vw;
   display: block;
-  width: 70%;
 }
 
 .mission-statement-wrapper p {
   padding-right: 6vw;
   font-size: 1.5vw;
+}
+
+.mission-statement-wrapper .header-wrapper img {
+  width: auto;
+  height: 10vh;
+  max-height: 10vw;
+  margin-left: 6vw;
+}
+
+.mission-statement-wrapper .header-wrapper {
+  width: auto;
+  align-items: center;
 }

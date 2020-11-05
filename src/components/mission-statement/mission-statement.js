@@ -1,11 +1,13 @@
 import React from "react";
 import "./mission-statement.css";
+import Asterisk from "../../assets/sbp_asterisk.png"
 
 export default () => {
   return (
     <div class="mission-statement-wrapper">
       <div class="header-wrapper">
         <h1>OUR MISSION</h1>
+        <img src={Asterisk} />
       </div>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

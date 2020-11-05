@@ -16,6 +16,7 @@ class RootIndex extends React.Component {
     let siteTitle = get(this, "props.data.site.siteMetadata.title");
     const posts = get(this, "props.data.allContentfulBlogPost.edges");
     const [author] = get(this, "props.data.allContentfulPerson.edges");
+    const newsletterDetails = get(this, "props.data.allContentfulNewsletter.nodes");
     siteTitle = "Support Black Philly";
     return (
       <Layout location={this.props.location}>
@@ -27,7 +28,7 @@ class RootIndex extends React.Component {
                 <HeroImages />
                 <Mission />
                 <Articles posts={posts} />
-                <Newsletter />
+                <Newsletter data={newsletterDetails} />
             </div>
             <Sidebar />
           </div>
@@ -40,6 +41,15 @@ export default RootIndex;
 
 export const pageQuery = graphql`
   query HomeQuery {
+    allContentfulNewsletter {
+      nodes {
+        content {
+          content
+        }
+        mailchimpEndpoint
+        title
+      }
+    }
     allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
       edges {
         node {
