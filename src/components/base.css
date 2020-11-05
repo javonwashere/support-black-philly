@@ -322,7 +322,7 @@ a {
     font-size: 12vw !important;
   }
   .header-wrapper {
-    width: 80% !important;
+    width: 100% !important;
   }
   .mission-statement-wrapper {
     height: fit-content !important;
@@ -353,6 +353,11 @@ a {
   }
   button p {
     font-size: 2vw;
+  }
+
+  .newsletter-wrapper {
+    height: fit-content !important;
+    padding-bottom: 20vh;
   }
 }
 
