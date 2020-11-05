@@ -14,7 +14,7 @@ export default ({ article }) => {
           __html: article.description.childMarkdownRemark.html,
         }}
       />
-      <small>{article.publishDate}</small>
+      {/* <small>{article.publishDate}</small> */}
       <div className={styles.button}>
         <Link to={`/blog/${article.slug}`}>READ FULL ARTICLE</Link>
       </div>
