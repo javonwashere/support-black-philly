@@ -1,7 +1,7 @@
 .newsletter-wrapper {
   width: calc(100% - 10vmin) !important;
   margin: 0 auto;
-  height: 80vh;
+  height: fit-content;
 }
 
 .newsletter-wrapper h1 {
@@ -40,7 +40,7 @@
 }
 
 .fist-wrapper {
-  width: 20px;
+  width: 20vw;
 }
 
 .newsletter-wrapper p.paragraph-text {

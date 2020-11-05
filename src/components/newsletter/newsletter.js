@@ -41,7 +41,7 @@ export default class Newsletter extends React.Component {
     return (
       <div class="newsletter-wrapper">
         <div class="header-wrapper">
-          <div style={{ width: "28vw" }}>
+          <div style={{}}>
             <h1>{this.state.title}</h1>
           </div>
           <div className="fist-wrapper">

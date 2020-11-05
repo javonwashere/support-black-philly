@@ -7,7 +7,7 @@ export default ({ posts }) => {
     <div className="article-wrapper">
       <div class="header-wrapper">
         <h1 className="section-headline">
-          Amplify “Buy Black” <br /> Mainstream
+          Amplify “Buy Black” Mainstream
         </h1>
       </div>
       <div className="article-list-wrapper">

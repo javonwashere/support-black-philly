@@ -1,17 +1,17 @@
 .previewTitle {
-  font-size: 2vw;
+  font-size: 3vw;
   line-height: 1;
   margin-bottom: 0;
 }
 
 .preview {
   border: 2px solid rgb(40, 40, 40);
-  min-height: 40vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  height: 100%;
 }
 
 .preview:hover {
@@ -46,5 +46,5 @@
 }
 .button a {
   text-decoration: none;
-  font-size: 1.3vw;
+  font-size: 2vw;
 }

@@ -32,7 +32,7 @@ export default () => (
       <ImgWrapper>
         <TextLogoContainer src={fullLogo} />
       </ImgWrapper>
-      <SocialIconsContainer>
+      <SocialIconsContainer className="social-icons">
         <a href="/">
           <SocialIcon src={instagram} />
         </a>

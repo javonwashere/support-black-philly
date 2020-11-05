@@ -203,7 +203,7 @@ a {
   }
   .content > div {
     scroll-snap-align: start;
-    height: 50vh;
+    height: 60vh;
   }
   .everybody-black-wrapper {
     bottom: -10vw;
@@ -211,6 +211,9 @@ a {
   }
   .navbar {
     height: 15vh !important;
+  }
+  .social-icons img {
+    height: 15px;
   }
   .content-area {
     margin-top: 15vh !important;
@@ -227,6 +230,12 @@ a {
     margin-block-end: 0em !important;
     margin-block-start: 0em !important;
   }
+  .header-wrapper > div > h1 {
+    font-size: 12vw !important;
+  }
+  .header-wrapper {
+    width: 100% !important;
+  }
   .mission-statement-wrapper {
     height: fit-content !important;
   }
@@ -237,17 +246,37 @@ a {
     margin-top: 2vh !important;
   }
   .article-list-wrapper {
-    min-height: 20vh !important;
+    min-height: 25vh !important;
   }
   .article {
     width: 50vw;
   }
   .article > div {
-    min-height: 20vh !important;
+    min-height: 25vh !important;
   }
 
   .article small {
     font-size: 1vw;
+  }
+  .paragraph-text {
+    font-size: 4vw !important;
+  }
+
+  .newsletter-wrapper {
+    height: fit-content !important;
+    padding-bottom: 20vh;
+  }
+
+  .fist-wrapper img {
+    width: 100% !important;
+  }
+
+  button p {
+    font-size: 2vw;
+  }
+
+  .article-wrapper p {
+    font-size: 2.4vw !important;
   }
 }
 
@@ -261,7 +290,7 @@ a {
   }
   .content > div {
     scroll-snap-align: start;
-    height: 50vh;
+    height: 70vh;
   }
   .everybody-black-wrapper {
     bottom: -10vw;
@@ -269,6 +298,9 @@ a {
   }
   .navbar {
     height: 15vh !important;
+  }
+  .social-icons img {
+    height: 15px;
   }
   .content-area {
     margin-top: 15vh !important;
@@ -286,6 +318,12 @@ a {
     margin-block-end: 0em !important;
     margin-block-start: 0em !important;
   }
+  .header-wrapper > div > h1 {
+    font-size: 12vw !important;
+  }
+  .header-wrapper {
+    width: 80% !important;
+  }
   .mission-statement-wrapper {
     height: fit-content !important;
   }
@@ -296,16 +334,25 @@ a {
     margin-top: 2vh !important;
   }
   .article-list-wrapper {
-    min-height: 20vh !important;
+    min-height: 25vh !important;
   }
   .article {
     width: 50vw;
   }
   .article > div {
-    min-height: 20vh !important;
+    min-height: 25vh !important;
   }
   .article small {
     font-size: 1vw;
+  }
+  .paragraph-text {
+    font-size: 4vw !important;
+  }
+  .fist-wrapper img {
+    width: 100% !important;
+  }
+  button p {
+    font-size: 2vw;
   }
 }
 
@@ -314,10 +361,10 @@ a {
     display: none;
   }
   .content-area {
-    margin-top: 15vh !important;
+    margin-top: 20vh !important;
   }
   .content {
-    height: 85vh !important;
+    height: 80vh !important;
   }
 }
 
