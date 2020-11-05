@@ -25,7 +25,7 @@ import everybodyBlack from "../../assets/everybody_black.png";
 
 export default () => (
   <Navbar>
-    <NavWrapper>
+    <NavWrapper className="header-animation">
       <ImgWrapper>
         <MonoLogoContainer src={monogram} />
       </ImgWrapper>
@@ -63,6 +63,7 @@ const SocialIconsContainer = styled.div`
 `;
 
 const SocialIcon = styled.img`
+  height: 1px;
   height: 20px;
   width: 10px;
   width: auto;
@@ -94,12 +95,14 @@ const NavWrapper = styled.div`
 `;
 
 const MonoLogoContainer = styled.img`
+  height: 1px;
   height: 10vw;
   max-height: 10vh;
   width: auto;
 `;
 
 const TextLogoContainer = styled.img`
+height: 1px;
   height: 18vw;
   max-height: 18vh;
   width: auto;
