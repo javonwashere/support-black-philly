@@ -24,7 +24,7 @@ class Template extends React.Component {
     return (
       <React.Fragment>
         <Header />
-        <div style={{ margin: "0 auto", marginTop: "20vh" }}>
+        <div className="content-area" style={{ margin: "0 auto" }}>
           {children}
         </div>
       </React.Fragment>

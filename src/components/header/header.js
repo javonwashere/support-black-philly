@@ -24,7 +24,7 @@ import everybodyBlack from "../../assets/everybody_black.png";
 // )
 
 export default () => (
-  <Navbar>
+  <Navbar className="navbar">
     <NavWrapper className="header-animation">
       <ImgWrapper>
         <MonoLogoContainer src={monogram} />

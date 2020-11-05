@@ -11,22 +11,20 @@
 }
 
 @font-face {
-    font-family: "SohneSchmal-Fett";
-    src: local("SohneSchmal-Fett"),
-      url(./fonts/sohneSchmal_fett.otf) format("opentype");
+  font-family: "SohneSchmal-Fett";
+  src: local("SohneSchmal-Fett"),
+    url(./fonts/sohneSchmal_fett.otf) format("opentype");
 }
 
-
-h1, h3 {
-    font-family: "SohneSchmal-Fett"
+h1,
+h3 {
+  font-family: "SohneSchmal-Fett";
 }
 
 h2 {
-  font-family: "Bark Grotesk"
+  font-family: "Bark Grotesk";
 }
 
 p {
-  font-family: "PitchSans Semibold"
+  font-family: "PitchSans Semibold";
 }
-
-

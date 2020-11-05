@@ -10,13 +10,17 @@ import Sidebar from "../components/sidebar/sidebar";
 import Mission from "../components/mission-statement/mission-statement";
 import Articles from "../components/articles/articles";
 import Newsletter from "../components/newsletter/newsletter";
+import BuyBlack from "../components/buy-black/buy-black";
 
 class RootIndex extends React.Component {
   render() {
     let siteTitle = get(this, "props.data.site.siteMetadata.title");
     const posts = get(this, "props.data.allContentfulBlogPost.edges");
     const [author] = get(this, "props.data.allContentfulPerson.edges");
-    const newsletterDetails = get(this, "props.data.allContentfulNewsletter.nodes");
+    const newsletterDetails = get(
+      this,
+      "props.data.allContentfulNewsletter.nodes"
+    );
     siteTitle = "Support Black Philly";
     return (
       <Layout location={this.props.location}>
@@ -24,13 +28,22 @@ class RootIndex extends React.Component {
           <Helmet title={siteTitle} />
           <div class="grid-container">
             <div class="content">
-              {/* <Hero data={author.node} /> */}
-                <HeroImages />
-                <Mission />
-                <Articles posts={posts} />
-                <Newsletter data={newsletterDetails} />
+              <HeroImages />
+              <Mission />
+              <Articles posts={posts} />
+              <Newsletter data={newsletterDetails} />
             </div>
             <Sidebar />
+          </div>
+          <div class="grid-container-mobile">
+            <div class="content">
+              <div className="left-img"></div>
+              <BuyBlack />
+              <Mission />
+              <div className="right-img"></div>
+              <Articles posts={posts} />
+              <Newsletter data={newsletterDetails} />
+            </div>
           </div>
         </div>
       </Layout>
