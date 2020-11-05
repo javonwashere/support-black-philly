@@ -18,6 +18,16 @@
   height: 80vh;
   overflow: scroll;
   position: relative;
+  scroll-snap-type: y proximity;
+}
+
+.content > div {
+  scroll-snap-align: start;
+  height: 80vh;
+}
+
+.content > div h1:first-child {
+  margin-block-start: 0.67em;
 }
 
 .everybody-black-wrapper {
@@ -58,7 +68,6 @@
 
 .buy-black {
   grid-area: buy-black;
-  background-color: rgb(40, 40, 40);
 }
 .contact {
   grid-area: contact;

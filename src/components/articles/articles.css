@@ -1,6 +1,9 @@
 .article-wrapper {
   width: calc(100% - 10vmin) !important;
   margin: 3vh auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .article-wrapper h1 {
@@ -18,15 +21,14 @@
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  height: 40vh;
+  padding: 1vh 0;
 }
 
 .article {
   flex: 0 0 auto;
-  width: 30vw;
+  width: 25vw;
   padding-right: 2vw;
-}
-
-.article:hover {
 }
 
 div.scrollmenu {

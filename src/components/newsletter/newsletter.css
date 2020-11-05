@@ -35,6 +35,12 @@
     display: flex;
 }
 
+.header-wrapper > h1, .header-wrapper > div h1 {
+  font-size: 4.5vw;
+}
+
+
+
 
 .fist-wrapper {
     width: 20px;

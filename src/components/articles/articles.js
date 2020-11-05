@@ -5,7 +5,11 @@ import "./articles.css";
 export default ({ posts }) => {
   return (
     <div className="article-wrapper">
-      <h1 className="section-headline">Amplify “Buy Black” <br /> Mainstream</h1>
+      <div class="header-wrapper">
+        <h1 className="section-headline">
+          Amplify “Buy Black” <br /> Mainstream
+        </h1>
+      </div>
       <div className="article-list-wrapper">
         {posts.map(({ node }) => {
           return (
