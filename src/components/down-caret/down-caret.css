@@ -1,0 +1,7 @@
+.scroll-caret-please {
+    z-index: 1000;
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    width: 5vw;
+}

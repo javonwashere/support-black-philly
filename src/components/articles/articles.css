@@ -14,7 +14,7 @@
 }
 
 .article-wrapper p {
-  font-size: 2vw;
+  font-size: 0.7em;
 }
 
 .article-list-wrapper {
@@ -27,7 +27,7 @@
 
 .article {
   flex: 0 0 auto;
-  width: 50vw;
+  width: 33vw;
   padding-right: 2vw;
   height: 100%;
 }

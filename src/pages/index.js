@@ -13,6 +13,7 @@ import Newsletter from "../components/newsletter/newsletter";
 import BuyBlack from "../components/buy-black/buy-black";
 import Header from "../components/header/header";
 import Img from "gatsby-image";
+import scrollDownWhite from "../assets/scrolldown_white.png";
 
 class RootIndex extends React.Component {
   render() {
@@ -45,7 +46,7 @@ class RootIndex extends React.Component {
     siteTitle = "Support Black Philly";
     return (
       <React.Fragment>
-        <Header data={socialMediaLinks[0].node}/>
+        <Header data={socialMediaLinks[0].node} />
         <Layout location={this.props.location}>
           <div style={{ background: "#fff" }}>
             <Helmet title={siteTitle} />
@@ -60,12 +61,13 @@ class RootIndex extends React.Component {
             </div>
             <div class="grid-container-mobile">
               <div class="content">
-                <div className="left-img">
-                  <Img
-                    //   className={styles.heroImage}
-                    //   alt={data.name}
-                    fluid={featuredImages[0].node.imgOne.fluid}
-                  />
+                <div className="hero-mobile">
+                  <div className="down-caret">
+                    <img src={scrollDownWhite} />
+                  </div>
+                  <div className="left-img mobile-left">
+                    <Img fluid={featuredImages[0].node.imgOne.fluid} />
+                  </div>
                 </div>
                 <BuyBlack />
                 <Mission data={missionStatementDetails} />
