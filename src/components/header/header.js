@@ -5,9 +5,9 @@ import styles from "./header.module.css";
 import fullLogo from "../../assets/sbp_full_logo.png";
 import monogram from "../../assets/sbp_monogram.png";
 
-import facebook from "../../assets/socials/facebook.svg";
-import instagram from "../../assets/socials/instagram.svg";
-import twitter from "../../assets/socials/twitter.svg";
+import facebookIcon from "../../assets/socials/facebook.svg";
+import instagramIcon from "../../assets/socials/instagram.svg";
+import twitterIcon from "../../assets/socials/twitter.svg";
 import everybodyBlack from "../../assets/everybody_black.png";
 
 // export default () => (
@@ -23,37 +23,40 @@ import everybodyBlack from "../../assets/everybody_black.png";
 //   </nav>
 // )
 
-export default () => (
-  <Navbar className="navbar">
-    <NavWrapper className="header-animation">
-      <ImgWrapper>
-        <MonoLogoContainer src={monogram} />
-      </ImgWrapper>
-      <ImgWrapper>
-        <TextLogoContainer src={fullLogo} />
-      </ImgWrapper>
-      <SocialIconsContainer className="social-icons">
-        <a href="/">
-          <SocialIcon src={instagram} />
-        </a>
-        <a href="/">
-          <SocialIcon src={facebook} />
-        </a>
-        <a href="/">
-          <SocialIcon src={twitter} />
-        </a>
-      </SocialIconsContainer>
-      <div class="everybody-black-wrapper">
-        <img src={everybodyBlack} />
-      </div>
-    </NavWrapper>
-  </Navbar>
-);
+export default ({ data }) => {
+  const { twitter, facebook, instagram } = data;
+  console.log(data);
+  return (
+    <Navbar className="navbar">
+      <NavWrapper className="header-animation">
+        <ImgWrapper>
+          <MonoLogoContainer src={monogram} />
+        </ImgWrapper>
+        <ImgWrapper>
+          <TextLogoContainer src={fullLogo} />
+        </ImgWrapper>
+        <SocialIconsContainer className="social-icons">
+          <a href={instagram}>
+            <SocialIcon src={instagramIcon} />
+          </a>
+          <a href={facebook}>
+            <SocialIcon src={facebookIcon} />
+          </a>
+          <a href={twitter}>
+            <SocialIcon src={twitterIcon} />
+          </a>
+        </SocialIconsContainer>
+        <div class="everybody-black-wrapper">
+          <img src={everybodyBlack} />
+        </div>
+      </NavWrapper>
+    </Navbar>
+  );
+};
 
 const ImgWrapper = styled.div`
   width: 100%;
-`
-
+`;
 
 const SocialIconsContainer = styled.div`
   display: flex;
@@ -91,7 +94,6 @@ const NavWrapper = styled.div`
   height: 100%;
   margin: 0 auto;
   // position: relative;
-  
 `;
 
 const MonoLogoContainer = styled.img`
@@ -102,7 +104,7 @@ const MonoLogoContainer = styled.img`
 `;
 
 const TextLogoContainer = styled.img`
-height: 1px;
+  height: 1px;
   height: 18vw;
   max-height: 18vh;
   width: auto;

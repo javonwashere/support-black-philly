@@ -9,14 +9,18 @@ export default ({ article }) => {
   return (
     <div className={styles.preview}>
       <h2 className={styles.previewTitle}>{article.title.toUpperCase()}</h2>
-      <p
+      {/* <p
         dangerouslySetInnerHTML={{
           __html: article.description.childMarkdownRemark.html,
         }}
-      />
+      /> */}
+      <p>{article.description.description}</p>
       {/* <small>{article.publishDate}</small> */}
-      <div className={styles.button}>
+      {/* <div className={styles.button}>
         <Link to={`/blog/${article.slug}`}>READ FULL ARTICLE</Link>
+      </div> */}
+      <div className={styles.button}>
+        <Link to={`${article.link}`}>READ FULL ARTICLE</Link>
       </div>
     </div>
   );

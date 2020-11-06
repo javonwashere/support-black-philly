@@ -7,6 +7,14 @@
   height: 100%;
 }
 
+.left-img div {
+  height: 100%;
+}
+
+.right-img div {
+  height: 100%;
+}
+
 .right-img {
   background-image: url("../../assets/hero/keyboard.jpg");
   background-repeat: no-repeat;

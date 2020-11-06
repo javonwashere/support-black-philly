@@ -11,42 +11,78 @@ import Mission from "../components/mission-statement/mission-statement";
 import Articles from "../components/articles/articles";
 import Newsletter from "../components/newsletter/newsletter";
 import BuyBlack from "../components/buy-black/buy-black";
+import Header from "../components/header/header";
+import Img from "gatsby-image";
 
 class RootIndex extends React.Component {
   render() {
     let siteTitle = get(this, "props.data.site.siteMetadata.title");
-    const posts = get(this, "props.data.allContentfulBlogPost.edges");
+    // const posts = get(this, "props.data.allContentfulBlogPost.edges");
+    const posts = get(this, "props.data.allContentfulArticle.edges");
+    const featuredImages = get(
+      this,
+      "props.data.allContentfulHomepageFeaturedImages.edges"
+    );
     const [author] = get(this, "props.data.allContentfulPerson.edges");
     const newsletterDetails = get(
       this,
       "props.data.allContentfulNewsletter.nodes"
     );
+
+    const missionStatementDetails = get(
+      this,
+      "props.data.allContentfulMissionStatement.nodes"
+    );
+
+    const socialMediaLinks = get(
+      this,
+      "props.data.allContentfulSocialMediaLinks.edges"
+    );
+
+    console.log("SOCIAL LINKS", socialMediaLinks);
+
+    console.log("WTF", missionStatementDetails);
     siteTitle = "Support Black Philly";
     return (
-      <Layout location={this.props.location}>
-        <div style={{ background: "#fff" }}>
-          <Helmet title={siteTitle} />
-          <div class="grid-container">
-            <div class="content">
-              <HeroImages />
-              <Mission />
-              <Articles posts={posts} />
-              <Newsletter data={newsletterDetails} />
+      <React.Fragment>
+        <Header data={socialMediaLinks[0].node}/>
+        <Layout location={this.props.location}>
+          <div style={{ background: "#fff" }}>
+            <Helmet title={siteTitle} />
+            <div class="grid-container">
+              <div class="content">
+                <HeroImages featuredImages={featuredImages[0].node} />
+                <Mission data={missionStatementDetails} />
+                <Articles posts={posts} />
+                <Newsletter data={newsletterDetails} />
+              </div>
+              <Sidebar />
             </div>
-            <Sidebar />
-          </div>
-          <div class="grid-container-mobile">
-            <div class="content">
-              <div className="left-img"></div>
-              <BuyBlack />
-              <Mission />
-              <div className="right-img"></div>
-              <Articles posts={posts} />
-              <Newsletter data={newsletterDetails} />
+            <div class="grid-container-mobile">
+              <div class="content">
+                <div className="left-img">
+                  <Img
+                    //   className={styles.heroImage}
+                    //   alt={data.name}
+                    fluid={featuredImages[0].node.imgOne.fluid}
+                  />
+                </div>
+                <BuyBlack />
+                <Mission data={missionStatementDetails} />
+                <div className="right-img">
+                  <Img
+                    //   className={styles.heroImage}
+                    //   alt={data.name}
+                    fluid={featuredImages[0].node.imgTwo.fluid}
+                  />
+                </div>
+                <Articles posts={posts} />
+                <Newsletter data={newsletterDetails} />
+              </div>
             </div>
           </div>
-        </div>
-      </Layout>
+        </Layout>
+      </React.Fragment>
     );
   }
 }
@@ -61,6 +97,43 @@ export const pageQuery = graphql`
         }
         mailchimpEndpoint
         title
+      }
+    }
+    allContentfulSocialMediaLinks {
+      edges {
+        node {
+          facebook
+          instagram
+          twitter
+        }
+      }
+    }
+    allContentfulArticle {
+      edges {
+        node {
+          description {
+            description
+          }
+          title
+          link
+        }
+      }
+    }
+    allContentfulMissionStatement {
+      nodes {
+        title
+        content {
+          content
+        }
+      }
+    }
+    allContentfulSocialMediaLinks {
+      edges {
+        node {
+          facebook
+          instagram
+          twitter
+        }
       }
     }
     allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
@@ -78,6 +151,22 @@ export const pageQuery = graphql`
           description {
             childMarkdownRemark {
               html
+            }
+          }
+        }
+      }
+    }
+    allContentfulHomepageFeaturedImages {
+      edges {
+        node {
+          imgOne {
+            fluid(quality: 90, resizingBehavior: SCALE) {
+              ...GatsbyContentfulFluid
+            }
+          }
+          imgTwo {
+            fluid(quality: 90, resizingBehavior: SCALE) {
+              ...GatsbyContentfulFluid
             }
           }
         }
