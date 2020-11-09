@@ -81,7 +81,7 @@ const Navbar = styled.div`
   display: flex;
   width: 100%;
   height: 20vh;
-  background-color: rgba(197, 164, 143, 1);
+  background-color: rgba(251, 248, 234, 1);
   //   padding: 3vh 2vw;
 `;
 

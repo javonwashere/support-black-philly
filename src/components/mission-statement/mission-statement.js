@@ -8,7 +8,7 @@ export default ({data}) => {
   return (
     <div class="mission-statement-wrapper" style={{position: "relative"}}>
       <div class="header-wrapper">
-        <h1>{data[0].title}</h1>
+        <h1 style={{margin: "2vh 0" }}>{data[0].title}</h1>
         <img src={Asterisk} />
       </div>
       <p>

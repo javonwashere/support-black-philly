@@ -14,7 +14,9 @@
 }
 
 .article-wrapper p {
-  font-size: 0.7em;
+  font-size: 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .article-list-wrapper {
