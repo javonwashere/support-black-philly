@@ -15,7 +15,7 @@
 
 .article-wrapper p {
   font-size: 0.8em;
-  overflow: hidden;
+  overflow: scroll;
   text-overflow: ellipsis;
 }
 

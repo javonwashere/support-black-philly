@@ -69,7 +69,8 @@ const SocialIcon = styled.img`
   height: 1px;
   height: 20px;
   width: 10px;
-  width: auto;
+  width: auto !important;
+  max-width: 10vw !important;
   padding-left: 1vw;
 `;
 
@@ -100,14 +101,15 @@ const MonoLogoContainer = styled.img`
   height: 1px;
   height: 10vw;
   max-height: 10vh;
-  width: auto;
+  width: auto !important;
+  max-width: 10vw !important;
 `;
 
 const TextLogoContainer = styled.img`
   height: 1px;
   height: 18vw;
   max-height: 18vh;
-  width: auto;
+  width: auto !important;
 `;
 
 const LogoContainer = styled.img`

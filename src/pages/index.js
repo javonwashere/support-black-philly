@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet";
 import Hero from "../components/hero";
 import HeroImages from "../components/hero/hero";
 import Layout from "../components/layout";
-import "../index.css";
 import Sidebar from "../components/sidebar/sidebar";
 import Mission from "../components/mission-statement/mission-statement";
 import Articles from "../components/articles/articles";
