@@ -302,9 +302,9 @@ a {
     font-size: 2vw;
   }
 
-  .article-wrapper p {
+  /* .article-wrapper p {
     font-size: 2.4vw !important;
-  }
+  } */
 }
 
 @media screen and (min-width: 401px) and (max-width: 500px) {
