@@ -86,7 +86,7 @@ export default class Newsletter extends React.Component {
               }}
             />
           )} */}
-        <DownCaret />
+        {/* <DownCaret /> */}
       </div>
     );
   }
