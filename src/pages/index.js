@@ -39,9 +39,6 @@ class RootIndex extends React.Component {
       "props.data.allContentfulSocialMediaLinks.edges"
     );
 
-    console.log("SOCIAL LINKS", socialMediaLinks);
-
-    console.log("WTF", missionStatementDetails);
     siteTitle = "Support Black Philly";
     return (
       <React.Fragment>
@@ -56,7 +53,7 @@ class RootIndex extends React.Component {
                 <Articles posts={posts} />
                 <Newsletter data={newsletterDetails} />
               </div>
-              <Sidebar />
+              <Sidebar email={socialMediaLinks[0].node.email}/>
             </div>
             <div class="grid-container-mobile">
               <div class="content">
@@ -134,6 +131,7 @@ export const pageQuery = graphql`
           facebook
           instagram
           twitter
+          email
         }
       }
     }

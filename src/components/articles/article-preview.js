@@ -5,7 +5,6 @@ import Img from "gatsby-image";
 import styles from "./article-preview.module.css";
 
 export default ({ article }) => {
-  console.log(article);
   return (
     <div className={styles.preview}>
       <h2 className={styles.previewTitle}>{article.title.toUpperCase()}</h2>

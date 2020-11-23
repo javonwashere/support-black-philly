@@ -15,7 +15,6 @@ export default class Newsletter extends React.Component {
       content: content.content,
       title,
     };
-    console.log(mailchimpEndpoint);
   }
 
   // 1. via `.then`
@@ -26,7 +25,6 @@ export default class Newsletter extends React.Component {
         this.setState({ result: data });
         // I recommend setting data to React state
         // but you can do whatever you want (including ignoring this `then()` altogether)
-        console.log(data);
         if (this.state.result.result === "error") {
           this.setState({ value: "Already Subscribed :)" });
         } else this.setState({ value: "Thank you!" });

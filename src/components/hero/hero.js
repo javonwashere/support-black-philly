@@ -4,7 +4,6 @@ import Img from "gatsby-image";
 import scrollDownWhite from "../../assets/scrolldown_white.png";
 
 export default ({ featuredImages }) => {
-  console.log("touch", featuredImages);
 
   const { imgOne, imgTwo } = featuredImages;
   return (

@@ -4,14 +4,16 @@ import "./sidebar.css";
 import Contact from "../../assets/sbp_contact.png";
 import BuyBlack from "../../assets/sbp_buyblack.png";
 
-export default () => {
+export default ({email}) => {
   return (
     <div class="sidebar">
       <BuyBlackWrapper>
         <BuyBlackImg src={BuyBlack} />
       </BuyBlackWrapper>
       <ContactWrapper>
-        <ContactImg src={Contact} />
+        <a href={`mailto:${email}`} style={{ display: "flex" }}>
+          <ContactImg src={Contact} />
+        </a>
       </ContactWrapper>
     </div>
   );

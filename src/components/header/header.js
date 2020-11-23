@@ -11,7 +11,6 @@ import everybodyBlack from "../../assets/everybody_black.png";
 
 export default ({ data }) => {
   const { twitter, facebook, instagram } = data;
-  console.log(data);
   return (
     <div class="navbar">
       <NavWrapper className="header-animation">

@@ -4,7 +4,6 @@ import Asterisk from "../../assets/sbp_asterisk.png"
 import DownCaret from "../down-caret/down-caret";
 
 export default ({data}) => {
-  console.log(data, "HERE WE GO")
   return (
     <div class="mission-statement-wrapper" style={{position: "relative"}}>
       <div class="header-wrapper">
